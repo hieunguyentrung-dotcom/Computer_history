@@ -1,0 +1,52 @@
+THIẾT LẬP HỘP NHẬN BÀI · How Computers Evolved (ITTR330336)
+Thời gian: khoảng 5 phút, làm một lần.
+
+Đã có sẵn trong Drive của anh (thư mục "IT Translation / How Computers Evolved - students' answers"):
+  - Google Sheet "How Computers Evolved · Bài nộp"
+  - Thư mục "Lớp thứ 3" và "Lớp thứ 5" (bài nộp dạng Google Doc sẽ vào đúng thư mục lớp)
+
+BƯỚC 1 · Dán script
+  1. Mở Sheet: https://docs.google.com/spreadsheets/d/1MCD7QWDIay8sHXqLJjeRYm4mZfXH2IbA4Lgog_Yyg4U/edit
+  2. Menu Tiện ích mở rộng → Apps Script.
+  3. Xóa đoạn code mẫu, dán TOÀN BỘ nội dung file Code.gs, bấm Lưu (biểu tượng đĩa mềm).
+
+BƯỚC 2 · Chạy setup một lần
+  1. Ở thanh công cụ, chọn hàm "setup" → bấm Chạy.
+  2. Google hỏi quyền: Xem lại quyền → chọn tài khoản của anh → Nâng cao → "Đi tới … (không an toàn)" → Cho phép.
+     (Cảnh báo này xuất hiện vì script do anh tự tạo; script chỉ ghi vào Sheet và thư mục của anh.)
+  3. Quay lại Sheet: có 3 trang tính "Bài nộp", "Quá trình dịch", "Log".
+
+BƯỚC 3 · Triển khai Web app
+  1. Bấm Triển khai (Deploy) → Tùy chọn triển khai mới (New deployment).
+  2. Bánh răng "Chọn loại" → Ứng dụng web (Web app).
+  3. Thực thi với tư cách: Tôi (Me). Người có quyền truy cập: Bất kỳ ai (Anyone).
+  4. Triển khai → copy URL kết thúc bằng /exec.
+  5. Kiểm tra: mở URL đó trên trình duyệt, thấy dòng "How Computers Evolved – hộp nhận bài đang hoạt động." là được.
+
+  ⚠ Nếu KHÔNG có lựa chọn "Bất kỳ ai" (chỉ có "Mọi người trong HCMUTE"):
+     tài khoản trường đang bị quản trị viên giới hạn. Khi đó:
+     a. Chia sẻ thư mục "How Computers Evolved - students' answers" cho một Gmail cá nhân của anh (quyền Người chỉnh sửa).
+     b. Đăng nhập Gmail cá nhân, mở Sheet "How Computers Evolved · Bài nộp" (đã được chia sẻ cùng thư mục) và làm lại Bước 1–3.
+     Bài nộp vẫn vào đúng thư mục trong Drive trường của anh.
+
+BƯỚC 4 · Gắn URL vào app
+  Mở file config.json trong thư mục app (trên GitHub: bấm vào file → biểu tượng bút chì),
+  dán URL vào dòng "endpoint": "https://script.google.com/macros/s/…/exec" → Commit.
+  (Hoặc gửi URL cho em, em gắn sẵn và gửi lại bản app.)
+  KHÔNG đổi dòng "key" – mã này phải trùng với KEY trong Code.gs.
+
+BƯỚC 5 · Thử nộp
+  Mở app trên điện thoại → điền họ tên, MSSV, chọn lớp → vào bài, làm vài câu → Dịch → Nộp bài.
+  Sheet "Bài nộp" có dòng mới; thư mục lớp có file Google Doc "MSSV – Họ tên – ngày giờ".
+
+DỮ LIỆU NHẬN ĐƯỢC
+  • Bài nộp: mỗi lần nộp 1 dòng. Có điểm tự động Task 1 (/23), Task 2 (/15), Task 3 (/10), Concept map (/52),
+    số câu đã dịch, thời gian học, link file bài làm, rồi 70 cột "Câu 1…70" và 8 cột "Nguồn 1…8".
+    Cột "Mới nhất" (✓) đánh dấu lần nộp mới nhất của mỗi sinh viên – lọc theo cột này để chấm.
+  • File Google Doc trong thư mục lớp: bảng Listening/Map (bài làm, ✓/✗, đáp án), bảng dịch 2 cột (Việt | bản dịch), ghi chú Source check.
+  • Quá trình dịch (chỉ sinh viên đồng ý): mỗi câu 1 dòng – thời gian soạn, số lần sửa, số lần nghe lại, các bản nháp.
+  • Log (chỉ sinh viên đồng ý): từng thao tác – mở tab, phát/tua video, điền ô, chọn đáp án map, sửa bản dịch, nộp bài.
+
+KHI SỬA SCRIPT SAU NÀY
+  Triển khai → Quản lý triển khai → biểu tượng bút chì → Phiên bản: Phiên bản mới → Triển khai.
+  (Làm như vậy để giữ nguyên URL /exec.)

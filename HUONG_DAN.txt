@@ -1,0 +1,35 @@
+APP HỌC DỊCH · How Computers Evolved (ITTR330336)
+
+1. Đăng lên GitHub Pages
+   - Tạo repository mới (ví dụ: hce-app), tải TẤT CẢ các file trong thư mục này lên (giữ nguyên tên file).
+   - Settings → Pages → Source: "Deploy from a branch" → Branch: main, thư mục / (root) → Save.
+   - Sau 1–2 phút, link có dạng: https://<tên-tài-khoản>.github.io/hce-app/
+   - Gửi link (hoặc mã QR của link) cho sinh viên.
+
+2. Sinh viên cài app
+   - iPhone: mở link bằng Safari → nút Chia sẻ → "Thêm vào MH chính".
+   - Android: mở bằng Chrome → bấm "Cài đặt ngay" trong app, hoặc ⋮ → "Cài đặt ứng dụng".
+   - Muốn xem video khi không có mạng: trang chính → "Tải video về máy".
+
+3. Chế độ giáo viên
+   - Sinh viên KHÔNG thấy phụ đề, transcript, đáp án, phần "So sánh" và Key points; app cũng không tự chấm.
+   - Bấm biểu tượng ổ khóa trên thanh tiêu đề, nhập mật khẩu (giống mật khẩu đáp án các học liệu khác của anh).
+   - Toàn bộ phụ đề và đáp án được MÃ HÓA bằng mật khẩu này: xem mã nguồn trang cũng không đọc được.
+   - Mở xong, chế độ giáo viên giữ đến khi đóng app hoặc bấm lại ổ khóa. Trên máy sinh viên (khi chấm bài trực tiếp) nhớ bấm khóa lại.
+   - Ở chế độ giáo viên, câu trả lời của sinh viên đúng/sai được tô xanh/đỏ để anh chấm nhanh.
+
+4. Cập nhật bài
+   - Sửa file rồi tải lên lại. Khi sửa sw.js, đổi tên phiên bản (hiện là hce-shell-v1 → v2) để máy sinh viên nhận bản mới.
+
+Lưu ý: app cần chạy qua https (GitHub Pages). Mở trực tiếp file index.html trên máy tính vẫn dùng được, nhưng không có chế độ ngoại tuyến.
+
+5. Nộp bài về Google Drive
+   - Xem file HUONG_DAN_NOP_BAI_GOOGLE_DRIVE.txt (dán Code.gs vào Apps Script, triển khai, dán URL vào config.json).
+   - Hai file Code.gs và HUONG_DAN_NOP_BAI_GOOGLE_DRIVE.txt KHÔNG cần tải lên GitHub.
+
+6. Bản web cho máy tính (web.html)
+   - Cùng thư mục, cùng dữ liệu, mật khẩu, cách nộp bài và quy tắc "dịch xong mới nghe" như app điện thoại.
+   - Link: https://<tên-tài-khoản>.github.io/hce-app/web.html
+   - Bố cục rộng: video bên trái, bài làm bên phải; tab Dịch, Map và Nguồn trải hết chiều ngang. Alt + ←/→ để chuyển câu.
+   - Muốn nhúng vào Google Sites: Chèn → Nhúng → Theo URL → dán link web.html.
+   - Làm trên cùng một trình duyệt thì bản web và bản app dùng chung bài làm đã lưu.
